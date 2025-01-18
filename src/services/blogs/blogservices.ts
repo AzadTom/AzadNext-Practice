@@ -1,13 +1,12 @@
+import axios from "axios";
 
-export const getBlogPosts = async() => {
-
-    try{
-
-        const response = await fetch('http://localhost:3001/api/blogs');
-        return response.json();
-    }
-    catch (e) {
-        console.error(e);
-    }
-
-}
+export const getBlogPosts = async () => {
+  try {
+    const response = await axios.get(
+      "https://api9.parentune.com/blogs/blogs?page=2&interest="
+    );
+    return response.data;
+  } catch (e) {
+    console.error(e);
+  }
+};
