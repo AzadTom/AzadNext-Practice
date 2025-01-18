@@ -10,7 +10,7 @@ const page  = async()=>{
 
     return(
         <main className="max-w-[1000px] mx-auto">
-            <Blogs posts={allposts}/>
+        {allposts && <Blogs posts={allposts}/>}
         </main>
     )
 }
