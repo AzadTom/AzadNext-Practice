@@ -1,9 +1,9 @@
-import Blogs from "@/components/blogs/Blogs";
+import { HeroSection1 } from "@/feature/herosection/HeroSection";
 
 const page = () => {
   return (
-    <main className="max-w-[1000px] mx-auto">
-      <Blogs />
+    <main>
+      <HeroSection1/>
     </main>
   );
 };
