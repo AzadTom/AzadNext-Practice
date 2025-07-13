@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
+import type { Metadata } from 'next';
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Next.js Projects",
+  title: "NextJS Projects",
   description: "This website is for my project space.",
 };
 
