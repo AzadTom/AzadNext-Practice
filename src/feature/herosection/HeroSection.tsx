@@ -1,8 +1,20 @@
 'use client';
+import { useWindowSize } from '@/hooks/useWindowSize';
 import { Logo } from '@/icons/Logo';
 import { SearchIcon } from '@/icons/Search';
+import Image from 'next/image';
 
 export const HeroSection1 = () => {
+  const windowSize = useWindowSize();
+
+  if (windowSize.width <= 600) {
+    return (
+      <header className="flex justify-center items-center h-screen">
+        <h2>This is visible on desktop only!</h2>
+      </header>
+    );
+  }
+
   return (
     <header className="w-full h-screen overflow-y-hidden  bg-gradient-to-tr from-[#FFB36A] via-[#FB155F] to-[#BA1EF7]">
       <nav>
@@ -47,7 +59,7 @@ export const HeroSection1 = () => {
       </section>
       <section className="relative bg-black w-full h-[400px]">
         <div className="absolute -top-[10rem] left-1/2 -translate-x-1/2">
-          <img src="/Macbook.png" alt="macbook" />
+          <Image src="/Macbook.png" alt="macbook" width={800} height={400} />
         </div>
       </section>
     </header>
