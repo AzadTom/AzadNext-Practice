@@ -39,7 +39,7 @@ export default function HeroBackground({className = "" }: HeroBackgroundProps) {
        </div>
       </div>
 
-        <LogoTicker />
+      <LogoTicker />
     </div>
   );
 }

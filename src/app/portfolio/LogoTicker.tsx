@@ -88,7 +88,7 @@ const LogoTicker = ({
   };
 
   return (
-   <div className="bg-[#081822] ">
+   <div className="absolute bottom-0 left-0 w-full z-20">
      <div className="logo-ticker-container  max-w-[1000px] mx-auto">
       <style>{`
         @keyframes scroll {
