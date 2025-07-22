@@ -1,5 +1,5 @@
-import { HeroSection1 } from "@/feature/herosection/HeroSection";
-import RiveSample  from "@/feature/rivesample/sample";
+import { HeroSection1 } from '@/feature/herosection/HeroSection';
+import RiveSample from '@/feature/rivesample/sample';
 
 const page = () => {
   return (
